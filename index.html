@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PA BAU &amp; SERVICE – Berlin</title>
-  <meta name="description" content="Hausmeisterservice, Pflaster- & Erdarbeiten, Galabau u. v. m. in Berlin">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PA BAU & SERVICE – Berlin</title>
+  <meta name="description" content="Hausmeisterservice, Pflaster- & Erdarbeiten, Galabau u. v. m. in Berlin" />
   <style>
-    /* ---------- Grunddesign ---------- */
     :root {
       --gruen: #0e2d1b;
       --beige: #f4f1ed;
@@ -19,9 +18,9 @@
     }
     body {
       font-family: Arial, sans-serif;
-      line-height: 1.6;
       background: var(--beige);
       color: var(--gruen);
+      line-height: 1.6;
     }
     a {
       color: var(--gruen);
@@ -31,9 +30,13 @@
       text-decoration: underline;
     }
     h2 {
-      margin: 2rem 0 .5rem;
+      margin: 2rem 0 0.5rem;
       border-bottom: 2px solid var(--gruen);
-      padding-bottom: .3rem;
+      padding-bottom: 0.3rem;
+    }
+    h3 {
+      margin-top: 1.5rem;
+      font-size: 1.2rem;
     }
     .container {
       width: 90%;
@@ -41,8 +44,6 @@
       margin: auto;
       padding: 1rem;
     }
-
-    /* ---------- Header ---------- */
     header {
       background: var(--gruen);
       color: #fff;
@@ -67,83 +68,25 @@
       color: #fff;
       font-weight: bold;
     }
-
-    /* ---------- Preisbox ---------- */
     .preistabelle {
       width: 100%;
       border-collapse: collapse;
       margin: 1rem 0;
     }
-    .preistabelle th,
-    .preistabelle td {
+    .preistabelle th, .preistabelle td {
       border: 1px solid var(--hellgrau);
-      padding: .6rem 1rem;
+      padding: 0.6rem 1rem;
       text-align: left;
     }
     .preistabelle th {
       background: var(--gruen);
       color: #fff;
     }
-    <section id="preise">
-  <h2>Paketpreise Hausmeisterservice (ab-Monatspreise)</h2>
-  <table class="preistabelle">
-    <thead><tr><th>Paket</th><th>Leistungen</th><th>Netto</th><th>Brutto</th></tr></thead>
-    <tbody>
-      <tr><td>Basis</td><td>1 × Objektkontrolle + Außenpflege</td><td>49 €</td><td>58,31 €</td></tr>
-      <tr><td>Standard</td><td>2 × Kontrolle + Außenpflege + Kleinstreparaturen</td><td>79 €</td><td>94,01 €</td></tr>
-      <tr><td>Premium</td><td>Vollservice inkl. Winterdienst</td><td>119 €</td><td>141,61 €</td></tr>
-    </tbody>
-  </table>
-
-  <h3>Pflasterarbeiten</h3>
-  <table class="preistabelle">
-    <thead><tr><th>Leistung</th><th>Einheit</th><th>Netto</th><th>Brutto</th></tr></thead>
-    <tbody>
-      <tr><td>Pflaster verlegen</td><td>ab m²</td><td>39 €</td><td>46,41 €</td></tr>
-      <tr><td>Bordsteine setzen</td><td>ab lfm</td><td>12 €</td><td>14,28 €</td></tr>
-      <tr><td>Arbeitszeit</td><td>pro Stunde</td><td>45 €</td><td>53,55 €</td></tr>
-    </tbody>
-  </table>
-
-  <h3>Kleine Maurerarbeiten</h3>
-  <table class="preistabelle">
-    <thead><tr><th>Leistung</th><th>Einheit</th><th>Netto</th><th>Brutto</th></tr></thead>
-    <tbody>
-      <tr><td>Wanddurchbruch inkl. Entsorgung</td><td>ab m²</td><td>65 €</td><td>77,35 €</td></tr>
-      <tr><td>Kleinere Ausbesserungen</td><td>pro Stunde</td><td>42 €</td><td>49,98 €</td></tr>
-      <tr><td>Schlitze ziehen / Mauern</td><td>ab m</td><td>18 €</td><td>21,42 €</td></tr>
-    </tbody>
-  </table>
-
-  <h3>Gartenpflege</h3>
-  <table class="preistabelle">
-    <thead><tr><th>Leistung</th><th>Einheit</th><th>Netto</th><th>Brutto</th></tr></thead>
-    <tbody>
-      <tr><td>Rasen mähen</td><td>ab m²</td><td>1,50 €</td><td>1,79 €</td></tr>
-      <tr><td>Hecken schneiden</td><td>ab lfm</td><td>4,50 €</td><td>5,36 €</td></tr>
-      <tr><td>Allgemeine Gartenpflege</td><td>pro Stunde</td><td>38 €</td><td>45,22 €</td></tr>
-    </tbody>
-  </table>
-
-  <h3>Abrissarbeiten</h3>
-  <table class="preistabelle">
-    <thead><tr><th>Leistung</th><th>Einheit</th><th>Netto</th><th>Brutto</th></tr></thead>
-    <tbody>
-      <tr><td>Tapeten entfernen</td><td>ab m²</td><td>3 €</td><td>3,57 €</td></tr>
-      <tr><td>Fliesen entfernen</td><td>ab m²</td><td>8 €</td><td>9,52 €</td></tr>
-      <tr><td>Kompletter Rückbau</td><td>pro Stunde</td><td>49 €</td><td>58,31 €</td></tr>
-    </tbody>
-  </table>
-
-  <p class="preisnote">Alle Preise zzgl. gesetzlicher MwSt. (der Bruttobetrag wird für Privatkunden zur Orientierung angezeigt). Endpreise nach Besichtigung und Absprache.</p>
-</section>
     .preisnote {
-      font-size: .9rem;
+      font-size: 0.9rem;
       color: #666;
-      margin-top: .3rem;
+      margin-top: 0.5rem;
     }
-
-    /* ---------- Galerie ---------- */
     .gallery {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -152,17 +95,15 @@
     .gallery img {
       width: 100%;
       border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, .1);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     }
-
-    /* ---------- Footer ---------- */
     footer {
       background: var(--gruen);
       color: #fff;
       text-align: center;
       padding: 1rem;
       margin-top: 2rem;
-      font-size: .9rem;
+      font-size: 0.9rem;
     }
   </style>
 </head>
@@ -170,9 +111,7 @@
 
 <header>
   <div class="container topbar">
-    <!-- Logo -->
-    <img src="logo.png" alt="PA BAU & SERVICE Logo" class="logo">
-    <!-- Navigation -->
+    <img src="logo.png" alt="PA BAU & SERVICE Logo" class="logo" />
     <nav>
       <ul>
         <li><a href="#leistungen">Leistungen</a></li>
@@ -186,7 +125,6 @@
 
 <main class="container">
 
-  <!-- Leistungen -->
   <section id="leistungen">
     <h2>Unsere Leistungen</h2>
     <ul>
@@ -200,36 +138,74 @@
     </ul>
   </section>
 
-  <!-- Preislisten -->
   <section id="preise">
-    <h2>Paketpreise (ab-Monatspreise)</h2>
+    <h2>Preislisten</h2>
+
+    <h3>Hausmeisterservice (monatlich)</h3>
     <table class="preistabelle">
-      <thead>
-        <tr><th>Paket</th><th>Leistungen</th><th>Preis* (netto)</th></tr>
-      </thead>
+      <thead><tr><th>Paket</th><th>Leistungen</th><th>Netto</th><th>Brutto</th></tr></thead>
       <tbody>
-        <tr><td>Basis</td><td>1 × Objektkontrolle + Außenpflege</td><td>ab 49 €</td></tr>
-        <tr><td>Standard</td><td>2 × Kontrolle + Außenpflege + Kleinstreparaturen</td><td>ab 79 €</td></tr>
-        <tr><td>Premium</td><td>Vollservice inkl. Winterdienst</td><td>ab 119 €</td></tr>
+        <tr><td>Basis</td><td>1× Kontrolle + Außenpflege</td><td>49 €</td><td>58,31 €</td></tr>
+        <tr><td>Standard</td><td>2× Kontrolle + Pflege + Kleinstreparaturen</td><td>79 €</td><td>94,01 €</td></tr>
+        <tr><td>Premium</td><td>Vollservice inkl. Winterdienst</td><td>119 €</td><td>141,61 €</td></tr>
       </tbody>
     </table>
-    <p class="preisnote">*Endgültiger Preis nach kostenloser Objektbesichtigung; zzgl. MwSt.</p>
+
+    <h3>Pflasterarbeiten</h3>
+    <table class="preistabelle">
+      <thead><tr><th>Leistung</th><th>Einheit</th><th>Netto</th><th>Brutto</th></tr></thead>
+      <tbody>
+        <tr><td>Pflaster verlegen</td><td>pro m²</td><td>39 €</td><td>46,41 €</td></tr>
+        <tr><td>Bordsteine setzen</td><td>pro lfm</td><td>12 €</td><td>14,28 €</td></tr>
+        <tr><td>Arbeitszeit</td><td>pro Stunde</td><td>45 €</td><td>53,55 €</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Kleine Maurerarbeiten</h3>
+    <table class="preistabelle">
+      <thead><tr><th>Leistung</th><th>Einheit</th><th>Netto</th><th>Brutto</th></tr></thead>
+      <tbody>
+        <tr><td>Wanddurchbruch inkl. Entsorgung</td><td>pro m²</td><td>65 €</td><td>77,35 €</td></tr>
+        <tr><td>Kleinere Ausbesserungen</td><td>pro Stunde</td><td>42 €</td><td>49,98 €</td></tr>
+        <tr><td>Schlitze ziehen / Mauern</td><td>pro m</td><td>18 €</td><td>21,42 €</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Gartenpflege</h3>
+    <table class="preistabelle">
+      <thead><tr><th>Leistung</th><th>Einheit</th><th>Netto</th><th>Brutto</th></tr></thead>
+      <tbody>
+        <tr><td>Rasen mähen</td><td>pro m²</td><td>1,50 €</td><td>1,79 €</td></tr>
+        <tr><td>Hecken schneiden</td><td>pro lfm</td><td>4,50 €</td><td>5,36 €</td></tr>
+        <tr><td>Allgemeine Pflege</td><td>pro Stunde</td><td>38 €</td><td>45,22 €</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Abrissarbeiten</h3>
+    <table class="preistabelle">
+      <thead><tr><th>Leistung</th><th>Einheit</th><th>Netto</th><th>Brutto</th></tr></thead>
+      <tbody>
+        <tr><td>Tapeten entfernen</td><td>pro m²</td><td>3 €</td><td>3,57 €</td></tr>
+        <tr><td>Fliesen entfernen</td><td>pro m²</td><td>8 €</td><td>9,52 €</td></tr>
+        <tr><td>Kompletter Rückbau</td><td>pro Stunde</td><td>49 €</td><td>58,31 €</td></tr>
+      </tbody>
+    </table>
+
+    <p class="preisnote">Alle Preise zzgl. gesetzlicher MwSt. · Brutto-Preise dienen nur zur Orientierung · Endpreise nach kostenloser Vor-Ort-Besichtigung.</p>
   </section>
 
-  <!-- Galerie -->
   <section id="galerie">
     <h2>Projektbeispiele</h2>
     <div class="gallery">
-      <img src="IMG_0907.jpeg" alt="Vorher: Küchenwand">
-      <img src="IMG_0908.jpeg" alt="Nachher: Wanddurchbruch">
-      <img src="IMG_0909.jpeg" alt="Erdarbeiten – Fläche vorbereitet">
+      <img src="IMG_0907.jpeg" alt="Vorher: Küchenwand" />
+      <img src="IMG_0908.jpeg" alt="Nachher: Wanddurchbruch" />
+      <img src="IMG_0909.jpeg" alt="Erdarbeiten – Fläche vorbereitet" />
     </div>
   </section>
 
-  <!-- Kontakt -->
   <section id="kontakt">
     <h2>Kontakt</h2>
-    <p>📞 <a href="tel:017674225108">0176 74225108</a><br>
+    <p>📞 <a href="tel:017674225108">0176 74225108</a><br />
        ✉️ <a href="mailto:pa-bau-service@gmx.de">pa-bau-service@gmx.de</a></p>
     <p>Impressum auf Anfrage.</p>
   </section>
@@ -237,7 +213,7 @@
 </main>
 
 <footer>
-  © 2025 PA BAU &amp; SERVICE · Hausmeisterservice Berlin
+  © 2025 PA BAU & SERVICE · Hausmeisterservice Berlin
 </footer>
 </body>
 </html>
