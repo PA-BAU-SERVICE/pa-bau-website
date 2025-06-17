@@ -1,157 +1,116 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PA BAU & SERVICE – Berlin</title>
-    <meta name="description" content="Hausmeisterservice, Pflasterarbeiten, Erdarbeiten, Galabau u. v. m. in Berlin.">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f1ed;
-            color: #0e2d1b;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PA BAU &amp; SERVICE – Berlin</title>
+  <meta name="description" content="Hausmeisterservice, Pflaster- & Erdarbeiten, Galabau u. v. m. in Berlin">
+  <style>
+    /* ---------- Grunddesign ---------- */
+    :root{
+      --gruen:#0e2d1b;
+      --beige:#f4f1ed;
+      --hellgrau:#e9e7e3;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:Arial, sans-serif;line-height:1.6;background:var(--beige);color:var(--gruen)}
+    a{color:var(--gruen);text-decoration:none}a:hover{text-decoration:underline}
+    h2{margin:2rem 0 .5rem;border-bottom:2px solid var(--gruen);padding-bottom:.3rem}
+    .container{width:90%;max-width:1000px;margin:auto;padding:1rem}
 
-        .container {
-            width: 90%;
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 1rem;
-        }
+    /* ---------- Header ---------- */
+    header{background:var(--gruen);color:#fff;padding:1rem 0}
+    .topbar{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem}
+    .logo{height:60px}
+    nav ul{display:flex;gap:1.5rem;list-style:none}
+    nav a{color:#fff;font-weight:bold}
 
-        .header {
-            background-color: #0e2d1b;
-            color: #ffffff;
-            padding: 2rem 0;
-            text-align: center;
-        }
+    /* ---------- Preisbox ---------- */
+    .preistabelle{width:100%;border-collapse:collapse;margin:1rem 0}
+    .preistabelle th,.preistabelle td{border:1px solid var(--hellgrau);padding:.6rem 1rem;text-align:left}
+    .preistabelle th{background:var(--gruen);color:#fff}
+    .preisnote{font-size:.9rem;color:#666;margin-top:.3rem}
 
-        .header h1 {
-            font-size: 2.2rem;
-            margin: 0;
-        }
+    /* ---------- Galerie ---------- */
+    .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem}
+    .gallery img{width:100%;border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,.1)}
 
-        .header p {
-            font-size: 1.1rem;
-            margin-top: 0.5rem;
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            padding: 0;
-            margin-top: 1rem;
-            gap: 2rem;
-        }
-
-        nav ul li a {
-            color: #ffffff;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        nav ul li a:hover {
-            text-decoration: underline;
-        }
-
-        h2 {
-            color: #0e2d1b;
-            margin-top: 2rem;
-            border-bottom: 2px solid #0e2d1b;
-            padding-bottom: 0.3rem;
-        }
-
-        ul {
-            padding-left: 1.5rem;
-        }
-
-        ul li {
-            margin-bottom: 0.5rem;
-        }
-
-        a {
-            color: #0e2d1b;
-        }
-
-        a:hover {
-            color: #333;
-        }
-
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1rem;
-            margin-top: 1rem;
-        }
-
-        .gallery img {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-
-        .footer {
-            background-color: #0e2d1b;
-            color: #ffffff;
-            text-align: center;
-            padding: 1rem;
-            margin-top: 2rem;
-        }
-    </style>
+    /* ---------- Footer ---------- */
+    footer{background:var(--gruen);color:#fff;text-align:center;padding:1rem;margin-top:2rem;font-size:.9rem}
+  </style>
 </head>
 <body>
-    <header class="header">
-        <div class="container">
-            <h1>PA BAU & SERVICE</h1>
-            <p>Ihr Partner für Hausmeisterservice & Bauleistungen in Berlin</p>
-            <nav>
-                <ul>
-                    <li><a href="#leistungen">Leistungen</a></li>
-                    <li><a href="#galerie">Projekte</a></li>
-                    <li><a href="#kontakt">Kontakt</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
 
-    <main class="container">
-        <section id="leistungen">
-            <h2>Unsere Leistungen</h2>
-            <ul>
-                <li><strong>Hausmeisterservice</strong> – Zuverlässige Objektbetreuung</li>
-                <li><strong>Pflasterarbeiten</strong> – Terrassen, Parkplätze, Einfahrten</li>
-                <li><strong>Maurerarbeiten (klein)</strong> – Reparatur & Ergänzungen</li>
-                <li><strong>Erdarbeiten</strong> – Ausschachtungen, Vorbereitungen</li>
-                <li><strong>Bauendreinigung</strong> – Besenrein & fachgerecht</li>
-                <li><strong>Gartenpflege</strong> – Hecken, Rasen, komplette Galabau-Leistungen</li>
-                <li><strong>Maschinentransport bis 2t</strong> – z. B. Minibagger</li>
-            </ul>
-        </section>
+<header>
+  <div class="container topbar">
+    <!-- Logo -->
+    <img src="logo.png" alt="PA BAU & SERVICE Logo" class="logo">
+    <!-- Navigation -->
+    <nav>
+      <ul>
+        <li><a href="#leistungen">Leistungen</a></li>
+        <li><a href="#preise">Preise</a></li>
+        <li><a href="#galerie">Projekte</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
-        <section id="galerie">
-            <h2>Projektbeispiele</h2>
-            <div class="gallery">
-                <img src="IMG_0907.jpeg" alt="Vorher: geschlossene Küchenwand" />
-                <img src="IMG_0908.jpeg" alt="Nachher: Wanddurchbruch fertig" />
-                <img src="IMG_0909.jpeg" alt="Erdarbeiten – Fläche vorbereitet" />
-            </div>
-        </section>
+<main class="container">
 
-        <section id="kontakt">
-            <h2>Kontakt</h2>
-            <p>📞 <a href="tel:017674225108">0176 74225108</a><br>
-               📧 <a href="mailto:pa-bau-service@gmx.de">pa-bau-service@gmx.de</a></p>
-            <p>Impressum auf Anfrage.</p>
-        </section>
-    </main>
+  <!-- Leistungen -->
+  <section id="leistungen">
+    <h2>Unsere Leistungen</h2>
+    <ul>
+      <li><strong>Hausmeisterservice</strong> – Zuverlässige Objektbetreuung</li>
+      <li><strong>Pflasterarbeiten</strong> – Terrassen, Parkplätze, Einfahrten</li>
+      <li><strong>Maurerarbeiten (klein)</strong> – Reparatur &amp; Ergänzungen</li>
+      <li><strong>Erdarbeiten</strong> – Ausschachtungen, Vorbereitungen</li>
+      <li><strong>Bauendreinigung</strong> – Besenrein &amp; fachgerecht</li>
+      <li><strong>Gartenpflege</strong> – Hecken, Rasen, kompletter Galabau</li>
+      <li><strong>Maschinentransport bis 2 t</strong> – z. B. Minibagger</li>
+    </ul>
+  </section>
 
-    <footer class="footer">
-        <p>© 2025 PA BAU & SERVICE – Berlin</p>
-    </footer>
+  <!-- Preislisten -->
+  <section id="preise">
+    <h2>Paketpreise (ab-Monatspreise)</h2>
+    <table class="preistabelle">
+      <thead>
+        <tr><th>Paket</th><th>Leistungen</th><th>Preis* (netto)</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Basis</td><td>1 × Objektkontrolle + Außenpflege</td><td>ab 49 €</td></tr>
+        <tr><td>Standard</td><td>2 × Kontrolle + Außenpflege + Kleinstreparaturen</td><td>ab 79 €</td></tr>
+        <tr><td>Premium</td><td>Vollservice inkl. Winterdienst</td><td>ab 119 €</td></tr>
+      </tbody>
+    </table>
+    <p class="preisnote">*Endgültiger Preis nach kostenloser Objektbesichtigung; zzgl. MwSt.</p>
+  </section>
+
+  <!-- Galerie -->
+  <section id="galerie">
+    <h2>Projektbeispiele</h2>
+    <div class="gallery">
+      <img src="IMG_0907.jpeg" alt="Vorher: Küchenwand">
+      <img src="IMG_0908.jpeg" alt="Nachher: Wanddurchbruch">
+      <img src="IMG_0909.jpeg" alt="Erdarbeiten – Fläche vorbereitet">
+    </div>
+  </section>
+
+  <!-- Kontakt -->
+  <section id="kontakt">
+    <h2>Kontakt</h2>
+    <p>📞 <a href="tel:017674225108">0176 74225108</a><br>
+       ✉️ <a href="mailto:pa-bau-service@gmx.de">pa-bau-service@gmx.de</a></p>
+    <p>Impressum auf Anfrage.</p>
+  </section>
+
+</main>
+
+<footer>
+  © 2025 PA BAU &amp; SERVICE · Hausmeisterservice Berlin
+</footer>
 </body>
 </html>
