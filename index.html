@@ -6,6 +6,7 @@
   <title>PA BAU &amp; SERVICE – Berlin</title>
   <meta name="description" content="Hausmeisterservice, Pflaster- & Erdarbeiten, Galabau u. v. m. in Berlin">
   <style>
+    /* ---------- Grunddesign ---------- */
     :root {
       --gruen: #0e2d1b;
       --beige: #f4f1ed;
@@ -40,6 +41,8 @@
       margin: auto;
       padding: 1rem;
     }
+
+    /* ---------- Header ---------- */
     header {
       background: var(--gruen);
       color: #fff;
@@ -64,6 +67,8 @@
       color: #fff;
       font-weight: bold;
     }
+
+    /* ---------- Preisbox ---------- */
     .preistabelle {
       width: 100%;
       border-collapse: collapse;
@@ -84,6 +89,8 @@
       color: #666;
       margin-top: .3rem;
     }
+
+    /* ---------- Galerie ---------- */
     .gallery {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -92,8 +99,10 @@
     .gallery img {
       width: 100%;
       border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,.1);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, .1);
     }
+
+    /* ---------- Footer ---------- */
     footer {
       background: var(--gruen);
       color: #fff;
@@ -108,7 +117,9 @@
 
 <header>
   <div class="container topbar">
+    <!-- Logo -->
     <img src="Logo.png" alt="PA BAU & SERVICE Logo" class="logo">
+    <!-- Navigation -->
     <nav>
       <ul>
         <li><a href="#leistungen">Leistungen</a></li>
@@ -122,19 +133,21 @@
 
 <main class="container">
 
+  <!-- Leistungen -->
   <section id="leistungen">
     <h2>Unsere Leistungen</h2>
     <ul>
       <li><strong>Hausmeisterservice</strong> – Zuverlässige Objektbetreuung</li>
       <li><strong>Pflasterarbeiten</strong> – Terrassen, Parkplätze, Einfahrten</li>
-      <li><strong>Maurerarbeiten (klein)</strong> – Reparatur &amp; Ergänzungen</li>
+      <li><strong>Maurerarbeiten (klein)</strong> – Reparatur & Ergänzungen</li>
       <li><strong>Erdarbeiten</strong> – Ausschachtungen, Vorbereitungen</li>
-      <li><strong>Bauendreinigung</strong> – Besenrein &amp; fachgerecht</li>
+      <li><strong>Bauendreinigung</strong> – Besenrein & fachgerecht</li>
       <li><strong>Gartenpflege</strong> – Hecken, Rasen, kompletter Galabau</li>
-      <li><strong>Maschinentransport bis 2 t</strong> – z. B. Minibagger</li>
+      <li><strong>Maschinentransport bis 2 t</strong> – z. B. Minibagger</li>
     </ul>
   </section>
 
+  <!-- Preislisten -->
   <section id="preise">
     <h2>Paketpreise (ab-Monatspreise)</h2>
     <table class="preistabelle">
@@ -150,6 +163,7 @@
     <p class="preisnote">*Endgültiger Preis nach kostenloser Objektbesichtigung; zzgl. MwSt.</p>
   </section>
 
+  <!-- Galerie -->
   <section id="galerie">
     <h2>Projektbeispiele</h2>
     <div class="gallery">
@@ -159,6 +173,7 @@
     </div>
   </section>
 
+  <!-- Kontakt -->
   <section id="kontakt">
     <h2>Kontakt</h2>
     <p>📞 <a href="tel:017674225108">0176 74225108</a><br>
@@ -171,6 +186,5 @@
 <footer>
   © 2025 PA BAU &amp; SERVICE · Hausmeisterservice Berlin
 </footer>
-
 </body>
-</html>
+</html> 
