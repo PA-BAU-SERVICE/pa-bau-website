@@ -4,151 +4,160 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>PA BAU & SERVICE</title>
-  <meta name="description" content="Hausmeisterservice, Pflaster- & Erdarbeiten, Galabau u. v. m. in Berlin" />
+  <meta name="description" content="Hausmeisterservice, Pflaster- & Erdarbeiten, Galabau u. v. m. in Berlin" />
   <style>
-    :root{--gruen:#0e2d1b;--beige:#f4f1ed;--hellgrau:#e9e7e3}
-    *{box-sizing:border-box;margin:0;padding:0}
-    body{font-family:Arial, sans-serif;line-height:1.6;background:var(--beige);color:var(--gruen)}
-    a{color:var(--gruen);text-decoration:none}a:hover{text-decoration:underline}
-    h2{margin:2rem 0 .5rem;border-bottom:2px solid var(--gruen);padding-bottom:.3rem}
-    h3{margin-top:1.5rem;font-size:1.2rem}
-    .container{width:90%;max-width:1000px;margin:auto;padding:1rem}
+    :root {
+      --gruen: #0e2d1b;
+      --beige: #f4f1ed;
+      --hellgrau: #e9e7e3;
+    }
 
-    /* ---------- Begrüßung ---------- */
-    .hero{height:250px;background:url('berlin_skyline_transparent.jpg') center/cover no-repeat}
-    .begruessung{background:var(--gruen);color:#fff;display:flex;align-items:center;gap:1rem;flex-wrap:wrap;padding:1rem}
-    .begruessung img{height:60px}
-    .begruessung h1{font-size:1.6rem}
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Arial, sans-serif;
+      background: var(--beige);
+      color: var(--gruen);
+      line-height: 1.6;
+    }
 
-    /* ---------- Navigation ---------- */
-    header{background:var(--gruen);color:#fff;padding:.5rem 0}
-    nav ul{display:flex;gap:2rem;list-style:none;justify-content:center}
-    nav a{color:#fff;font-weight:bold}
+    .hero {
+      height: 250px;
+      background: url('berlin_skyline_transparent.jpg') center/cover no-repeat;
+    }
 
-    /* ---------- Preise ---------- */
-    .preistabelle{width:100%;border-collapse:collapse;margin:1rem 0}
-    .preistabelle th,.preistabelle td{border:1px solid var(--hellgrau);padding:.6rem 1rem;text-align:left}
-    .preistabelle th{background:var(--gruen);color:#fff}
-    .preisnote{font-size:.9rem;color:#666;margin-top:.5rem}
+    .begruessung {
+      background: var(--gruen);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+      padding: 1rem;
+    }
 
-    /* ---------- Galerie ---------- */
-    .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem}
-    .gallery img{width:100%;border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,.1)}
+    .begruessung img {
+      height: 60px;
+    }
 
-    /* ---------- Footer ---------- */
-    footer{background:var(--gruen);color:#fff;text-align:center;padding:1rem;margin-top:2rem;font-size:.9rem}
+    .begruessung h1 {
+      font-size: 1.6rem;
+    }
+
+    header {
+      background: var(--gruen);
+      color: #fff;
+      padding: .5rem 0;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      gap: 2rem;
+    }
+
+    nav a {
+      color: #fff;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      width: 90%;
+      max-width: 1000px;
+      margin: auto;
+      padding: 1rem;
+    }
+
+    h2 {
+      margin: 2rem 0 .5rem;
+      border-bottom: 2px solid var(--gruen);
+      padding-bottom: .3rem;
+    }
+
+    ul li {
+      margin: 0.3rem 0;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, .1);
+    }
+
+    footer {
+      background: var(--gruen);
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+      font-size: .9rem;
+    }
   </style>
 </head>
 <body>
 
+  <!-- Skyline -->
   <div class="hero"></div>
 
+  <!-- Begrüßung -->
   <div class="begruessung container">
     <img src="logo.png" alt="Logo PA BAU & SERVICE">
     <h1>Willkommen bei PA BAU &amp; SERVICE</h1>
   </div>
 
+  <!-- Navigation -->
   <header>
     <nav>
       <ul>
         <li><a href="#leistungen">Leistungen</a></li>
-        <li><a href="#preise">Preise</a></li>
-        <li><a href="#galerie">Projekte</a></li>
+        <li><a href="#galerie">Galerie</a></li>
         <li><a href="#kontakt">Kontakt</a></li>
       </ul>
     </nav>
   </header>
 
-  <main class="container">
-    <!-- Leistungen -->
+  <!-- Inhalt -->
+  <main>
     <section id="leistungen">
       <h2>Unsere Leistungen</h2>
       <ul>
-        <li><strong>Hausmeisterservice</strong> – Zuverlässige Objektbetreuung</li>
-        <li><strong>Pflasterarbeiten</strong> – Terrassen, Parkplätze, Einfahrten</li>
-        <li><strong>Maurerarbeiten (klein)</strong> – Reparatur &amp; Ergänzungen</li>
-        <li><strong>Erdarbeiten</strong> – Ausschachtungen, Vorbereitungen</li>
-        <li><strong>Bauendreinigung</strong> – Besenrein &amp; fachgerecht</li>
-        <li><strong>Gartenpflege</strong> – Hecken, Rasen, kompletter Galabau</li>
-        <li><strong>Maschinentransport bis 2 t</strong> – z.&nbsp;B. Minibagger</li>
+        <li><strong>Hausmeisterservice</strong> – Objektpflege, Kontrolle, Winterdienst</li>
+        <li><strong>Pflasterarbeiten</strong> – Terrassen, Einfahrten, Wege</li>
+        <li><strong>Maurerarbeiten (klein)</strong> – Wanddurchbrüche, Reparaturen</li>
+        <li><strong>Erdarbeiten</strong> – Ausschachtungen, Planieren</li>
+        <li><strong>Bauendreinigung</strong> – Sauber und fachgerecht</li>
+        <li><strong>Gartenpflege</strong> – Rasen, Hecken, Pflege</li>
+        <li><strong>Maschinentransport bis 2 t</strong> – z. B. Minibagger</li>
       </ul>
     </section>
 
-    <!-- Preise -->
-    <section id="preise">
-      <h2>Preise</h2>
-
-      <h3>Hausmeisterservice (monatlich)</h3>
-      <table class="preistabelle">
-        <thead><tr><th>Paket</th><th>Leistungen</th><th>Netto</th><th>Brutto</th></tr></thead>
-        <tbody>
-          <tr><td>Basis</td><td>1× Kontrolle + Außenpflege</td><td>49 €</td><td>58,31 €</td></tr>
-          <tr><td>Standard</td><td>2× Kontrolle + Pflege + Kleinstreparaturen</td><td>79 €</td><td>94,01 €</td></tr>
-          <tr><td>Premium</td><td>Vollservice inkl. Winterdienst</td><td>119 €</td><td>141,61 €</td></tr>
-        </tbody>
-      </table>
-
-      <h3>Pflasterarbeiten</h3>
-      <table class="preistabelle">
-        <thead><tr><th>Leistung</th><th>Einheit</th><th>Netto</th><th>Brutto</th></tr></thead>
-        <tbody>
-          <tr><td>Pflaster verlegen</td><td>pro m²</td><td>39 €</td><td>46,41 €</td></tr>
-          <tr><td>Bordsteine setzen</td><td>pro lfm</td><td>12 €</td><td>14,28 €</td></tr>
-          <tr><td>Arbeitszeit</td><td>pro Stunde</td><td>45 €</td><td>53,55 €</td></tr>
-        </tbody>
-      </table>
-
-      <h3>Kleine Maurerarbeiten</h3>
-      <table class="preistabelle">
-        <thead><tr><th>Leistung</th><th>Einheit</th><th>Netto</th><th>Brutto</th></tr></thead>
-        <tbody>
-          <tr><td>Wanddurchbruch inkl. Entsorgung</td><td>pro m²</td><td>65 €</td><td>77,35 €</td></tr>
-          <tr><td>Kleinere Ausbesserungen</td><td>pro Stunde</td><td>42 €</td><td>49,98 €</td></tr>
-          <tr><td>Schlitze ziehen / Mauern</td><td>pro m</td><td>18 €</td><td>21,42 €</td></tr>
-        </tbody>
-      </table>
-
-      <h3>Gartenpflege</h3>
-      <table class="preistabelle">
-        <thead><tr><th>Leistung</th><th>Einheit</th><th>Netto</th><th>Brutto</th></tr></thead>
-        <tbody>
-          <tr><td>Rasen mähen</td><td>pro m²</td><td>1,50 €</td><td>1,79 €</td></tr>
-          <tr><td>Hecken schneiden</td><td>pro lfm</td><td>4,50 €</td><td>5,36 €</td></tr>
-          <tr><td>Allgemeine Pflege</td><td>pro Stunde</td><td>38 €</td><td>45,22 €</td></tr>
-        </tbody>
-      </table>
-
-      <h3>Abrissarbeiten</h3>
-      <table class="preistabelle">
-        <thead><tr><th>Leistung</th><th>Einheit</th><th>Netto</th><th>Brutto</th></tr></thead>
-        <tbody>
-          <tr><td>Tapeten entfernen</td><td>pro m²</td><td>3 €</td><td>3,57 €</td></tr>
-          <tr><td>Fliesen entfernen</td><td>pro m²</td><td>8 €</td><td>9,52 €</td></tr>
-          <tr><td>Kompletter Rückbau</td><td>pro Stunde</td><td>49 €</td><td>58,31 €</td></tr>
-        </tbody>
-      </table>
-
-      <p class="preisnote">Alle Preise zzgl. gesetzlicher MwSt. | Brutto = Orientierung für Privatkunden.</p>
-    </section>
-
-    <!-- Galerie -->
     <section id="galerie">
       <h2>Projektbeispiele</h2>
       <div class="gallery">
-        <img src="IMG_0907.jpeg" alt="Vorher: Küchenwand">
-        <img src="IMG_0908.jpeg" alt="Nachher: Wanddurchbruch">
-        <img src="IMG_0909.jpeg" alt="Erdarbeiten – Fläche vorbereitet">
+        <img src="1.png" alt="Projekt 1 – Außenbereich" />
+        <img src="2.jpeg" alt="Projekt 2 – Vorher/Nachher" />
+        <img src="3.JPG" alt="Projekt 3 – Bauarbeiten" />
       </div>
     </section>
 
-    <!-- Kontakt -->
     <section id="kontakt">
       <h2>Kontakt</h2>
       <p>📞 <a href="tel:017674225108">0176 742 251 08</a><br>
          ✉️ <a href="mailto:pa-bau-service@gmx.de">pa-bau-service@gmx.de</a></p>
       <p>Impressum auf Anfrage.</p>
     </section>
-
   </main>
 
   <footer>
