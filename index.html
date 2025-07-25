@@ -24,6 +24,9 @@
     nav ul{display:flex;justify-content:center;list-style:none;gap:2rem}
     nav a{color:#fff;font-weight:bold}
 
+    .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem;margin-top:1rem}
+    .gallery img{width:100%;border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,.1)}
+
     footer{background:var(--gruen);color:#fff;text-align:center;padding:1rem;margin-top:2rem;font-size:.9rem}
   </style>
 </head>
@@ -43,6 +46,7 @@
     <nav>
       <ul>
         <li><a href="#leistungen">Leistungen</a></li>
+        <li><a href="#galerie">Projekte</a></li>
         <li><a href="#kontakt">Kontakt</a></li>
       </ul>
     </nav>
@@ -64,6 +68,23 @@
       </ul>
     </section>
 
+    <!-- Galerie -->
+    <section id="galerie">
+      <h2>Pflasterarbeiten – Auswahl unserer Projekte</h2>
+      <div class="gallery">
+        <img src="1.jpeg" alt="Pflasterarbeiten – Bild 1">
+        <img src="2.jpeg" alt="Pflasterarbeiten – Bild 2">
+        <img src="3.jpeg" alt="Pflasterarbeiten – Bild 3">
+        <img src="4.jpeg" alt="Pflasterarbeiten – Bild 4">
+        <img src="5.jpeg" alt="Pflasterarbeiten – Bild 5">
+        <img src="6.jpeg" alt="Pflasterarbeiten – Bild 6">
+        <img src="7.jpeg" alt="Pflasterarbeiten – Bild 7">
+        <img src="8.jpeg" alt="Pflasterarbeiten – Bild 8">
+        <img src="9.jpeg" alt="Pflasterarbeiten – Bild 9">
+        <img src="10.jpeg" alt="Pflasterarbeiten – Bild 10">
+      </div>
+    </section>
+
     <!-- Kontakt -->
     <section id="kontakt">
       <h2>Kontakt</h2>
@@ -77,21 +98,6 @@
   <footer>
     © 2025 PA BAU &amp; SERVICE · Hausmeisterservice Berlin
   </footer>
+
 </body>
 </html>
-<!-- Galerie -->
-<section id="galerie">
-  <h2>Pflasterarbeiten – Auswahl unserer Projekte</h2>
-  <div class="gallery">
-    <img src="1.jpeg" alt="Pflasterarbeiten – Bild 1">
-    <img src="2.jpeg" alt="Pflasterarbeiten – Bild 2">
-    <img src="3.jpeg" alt="Pflasterarbeiten – Bild 3">
-    <img src="4.jpeg" alt="Pflasterarbeiten – Bild 4">
-    <img src="5.jpeg" alt="Pflasterarbeiten – Bild 5">
-    <img src="6.jpeg" alt="Pflasterarbeiten – Bild 6">
-    <img src="7.jpeg" alt="Pflasterarbeiten – Bild 7">
-    <img src="8.jpeg" alt="Pflasterarbeiten – Bild 8">
-    <img src="9.jpeg" alt="Pflasterarbeiten – Bild 9">
-    <img src="10.jpeg" alt="Pflasterarbeiten – Bild 10">
-  </div>
-</section>
